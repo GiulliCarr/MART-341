@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events and Registration</title>
+    <style>
+        body {
+            font-family: Georgia, serif;
+            background-color: #D0CD94;
+            color: #D56F3E;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        h1 {
+            margin-bottom: 30px;
+            color: #D56F3E;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 40px;
+        }
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .formClass {
+            display: inline-block;
+            text-align: left;
+        }
+        .labelClass {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .inputClass {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .checkboxClass {
+            margin-right: 10px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 25px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        a {
+            color: #241623;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 600px) {
+            .formClass, table {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <a href="index.html">Main Page</a>
+        <h1>Events</h1>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Artist</th>
+                    <th>Month</th>
+                    <th>Day</th>
+                    <th>Venue</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Alfie Templeman</td>
+                    <td>Oct</td>
+                    <td>16th</td>
+                    <td><a href="https://www.bandsintown.com/e/105604227?app_id=ggl_feed&came_from=289&utm_medium=web&utm_source=ggl_feed&utm_campaign=event&source=ea">Teragram Ballroom, Los Angeles</a></td>
+                </tr>
+                <tr>
+                    <td>Sasha Alex Sloan</td>
+                    <td>Oct</td>
+                    <td>17th</td>
+                    <td><a href="https://www.theroxy.com/events/detail/?event_id=577547">The Roxy, Los Angeles</a></td>
+                </tr>
+                <tr>
+                    <td>LA LOM</td>
+                    <td>Oct</td>
+                    <td>18th</td>
+                    <td><a href="https://www.themayan.com/events/la-lom/">Mayan Theater, Los Angeles</a></td>
+                </tr>
+                <tr>
+                    <td>Zinadelphia</td>
+                    <td>Nov</td>
+                    <td>6th</td>
+                    <td><a href="https://www.axs.com/events/646094/zinadelphia-tickets">El Cid, Los Angeles</a></td>
+                </tr>
+                <tr>
+                    <td>Edgar Alejandro</td>
+                    <td>Nov</td>
+                    <td>20th</td>
+                    <td><a href="https://eventseeker.com/san-diego/nov-20-2024/479576603-edgar-alejandro">Voodoo Room ~ House of Blues, San Diego</a></td>
+                </tr>
+                <tr>
+                    <td>Healing Gems</td>
+                    <td>Nov</td>
+                    <td>21st</td>
+                    <td><a href="https://alexsbar.com/listing/windows-w-special-guests-blanco-nino-soft-palms/">Alex’s Bar, Long Beach</a></td>
+                </tr>
+                <tr>
+                    <td>L’Impératrice</td>
+                    <td>Feb</td>
+                    <td>7th</td>
+                    <td><a href="https://www.shrineauditorium.com/events/detail/?event_id=494833">Shrine Expo Hall, Los Angeles</a></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Newsletter Signup</h2>
+        <form id="userForm" class="formClass">
+            <label for="firstName" class="labelClass">First Name:</label>
+            <input type="text" id="firstName" class="inputClass" name="firstName" required>
+
+            <label for="lastName" class="labelClass">Last Name:</label>
+            <input type="text" id="lastName" class="inputClass" name="lastName" required>
+
+            <label for="email" class="labelClass">Email:</label>
+            <input type="email" id="email" class="inputClass" name="email" required>
+
+            <label for="terms" class="labelClass">
+                <input type="checkbox" id="terms" class="checkboxClass" name="terms" required>
+                I agree to the terms and conditions
+            </label>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+</body>
+</html>
