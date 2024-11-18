@@ -1,0 +1,192 @@
+/* General Styles */
+body {
+    background-color: #D0CD94;
+    color: #D56F3E;
+    font-family: Georgia, serif;
+    text-align: center;
+}
+
+/* Header */
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+/* Navigation Bar */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #D56F3E;
+    font-size: 1.2em;
+}
+
+/* Main Content */
+#artist-image {
+    width: 200px;
+    height: 200px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.container h2 {
+    font-size: 1.8em;
+    margin: 0;
+}
+
+/* Paragraph */
+.description {
+    margin: 15px auto;
+    width: 80%;
+    max-width: 600px;
+    font-size: 1em;
+    text-align: left;
+}
+
+/* YouTube Video */
+.video {
+    display: block;
+    margin: 20px auto;
+    width: 560px;
+    height: 350px;
+}
+
+
+/* Styling for ROOTS web page */
+/* Header Styling */
+header {
+    background-color: #D56F3E;
+    color: #D0CD94;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Add this to create spacing below the header */
+body {
+    margin-top: 100px; /* Adjust based on the height of the header */
+}
+
+/* Navigation Bar Styling */
+nav {
+    margin: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #D0CD94;
+    font-weight: bold;
+}
+
+nav ul li .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #D56F3E;
+    padding: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav ul li:hover .dropdown-menu {
+    display: block;
+}
+
+nav ul li .dropdown-menu li {
+    display: block;
+    margin: 5px 0;
+}
+
+
+/* Paragraph Box Styling */
+#intro {
+    background-color: #D56F3E;
+    color: #D0CD94;
+    padding: 20px;
+    margin: 100px auto 20px;
+    width: 80%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Inline Blocks Section */
+#content {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.inline-block {
+    background-color: #D56F3E;
+    color: #D0CD94;
+    padding: 20px;
+    width: 40%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.inline-block h2 {
+    margin: 0 0 20px;
+    padding: 10px;
+    background-color: #D0CD94;
+    color: #D56F3E;
+    border-radius: 5px;
+}
+
+.inline-block ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.inline-block ul li {
+    margin-bottom: 20px;
+}
+
+/* Images in Events Section */
+.inline-block img {
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+}
+
+/* Footer Padding */
+body::after {
+    content: '';
+    display: block;
+    height: 40px;
+}

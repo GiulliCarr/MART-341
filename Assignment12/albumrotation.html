@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Albums on Rotation</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Georgia', serif;
+            background-color: #D0CD94;
+            color: #D56F3E;
+        }
+
+        .header {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .header h1 {
+            font-size: 60px;
+            margin: 0;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: #D56F3E;
+            font-weight: bold;
+        }
+
+        .centered-div {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        iframe {
+            border: none;
+            width: 400px;
+            height: 250px;
+        }
+
+        .span-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .album-span {
+            display: flex;
+            align-items: center;
+            width: 800px;
+        }
+
+        .album-span img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-right: 20px;
+        }
+
+        .album-text {
+            text-align: right;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .escape-char {
+            text-align: center;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Albums on Rotation</h1>
+    </div>
+
+    <div class="nav">
+        <a href="index.html">Main Page</a>
+        <a href="artistoftheweek.html">Artist of the Week</a>
+        <a href="events.html">Events</a>
+        <a href="lastweek.html">Last Week's Albums</a>
+        <a href="ROOTS.html">ROOTS</a>
+    </div>
+
+    <div class="centered-div">
+        <iframe width="560" height="315" 
+            src="https://www.youtube.com/embed/z2X2HaTvkl8?si=GYhujQbV4iHenqmP" 
+            title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+    </div>
+
+    <div class="span-container">
+        <div class="album-span">
+            <img src="Fever - Balthazar.jpg" alt="Album 1">
+            <div class="album-text">
+                <h3>Fever: Balthazar</h3>
+                <em>Genre: Alternative Indie</em><br>
+                Album Release: 2019<br>
+                <p>A groove-heavy listen with a prominent bass line, slinky &amp; seductive strings, &amp; an uncanny rhythm that could make your eyes roll back, Belgian rock band Balthazar once again kills it with their fourth studio album.</p>
+            </div>
+        </div>
+
+        <div class="album-span">
+            <img src="Glimmer of God - Jean Dawson.jpg" alt="Album 2">
+            <div class="album-text">
+                <h3>Glimmer of God: Jean Dawson</h3>
+                <em>Genre: Alternative Indie, Pop/Rock</em><br>
+                Album Release: 2024<br>
+                <p>Released Oct 18th of this year, Jean Dawson makes prominent moves with his third studio album. Dawson's use of ethereal strings, coupled with beats that can only be described as a grimey, addictive 80s funk, creates an experiential album, leaving listeners begging for more.</p>
+            </div>
+        </div>
+
+        <div class="album-span">
+            <img src="Division - Jenevieve.jpg" alt="Album 3">
+            <div class="album-text">
+                <h3>Division: Jenevieve</h3>
+                <em>Genre: R&amp;B/Soul</em><br>
+                Album Release: 2021<br>
+                <p>A soulful mix of contemprary and modern beats, Jenvevieve delivers foot tapping chords that transport you to a smokey hole-in-the-wall jazz bar. Debute single 'Baby Powder' throws a visciously wicked bass with Jenevieve's sultry wordplay.</p>
+            </div>
+        </div>
+
+        <div class="album-span">
+            <img src="Live - Donny Hathaway.jpg" alt="Album 4">
+            <div class="album-text">
+                <h3>Live: Donny Hathaway</h3>
+                <em>Genre: Jazz, Soul</em><br>
+                Album Release: 1972<br>
+                <p>Described as an uncomplicated &amp; energetic set, Live was recorded at two different concerts: side one at The Troubadour in West Hollywood, &amp; side two at The Bitter End in Greenwich Village, Manhattan. Hathaway delivers phenomenal performances, creating an opportunity for listeners to fully immserse themselves into the emotions that come from this smooth, jazzy album.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <audio controls autoplay>
+            <source src="jazz-loop-7163.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+
+    <p class="escape-char">"Ya like jazz?" ~ Barry B. Benson</p>
+</body>
+
+</html>
