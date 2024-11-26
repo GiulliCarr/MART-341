@@ -1,0 +1,169 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #F3FFC6;
+    color: #32292F;
+    font-family: "Andale Mono", monospace;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+header h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+/* Navigation Bar */
+nav {
+    width: 100%;
+    background-color: #DD614A;
+    padding: 10px 0;
+    text-align: center;
+}
+/* General Content Container */
+.container {
+    width: 90%; /* Adjusts to 90% of the viewport width */
+    max-width: 1000px; /* Maximum width for larger screens */
+    margin: 0 auto; /* Centers the content horizontally */
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #DD614A;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px 0;
+    margin: 0 auto;
+}
+
+
+.navbar {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.navbar li {
+    position: relative;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #F3FFC6;
+    font-style: italic;
+    font-size: 1.2em;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #DD614A;
+    list-style: none;
+    padding: 5px 0;
+    margin: 0;
+    border-radius: 5px;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Responsive Header Image */
+.header-image {
+    width: 100%;
+    max-width: 200px; /* Resize to match the nav bar */
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Intro Section */
+.intro {
+    margin: 20px auto;
+    padding: 15px;
+    max-width: 800px;
+    font-size: 1.2em;
+}
+
+/* Image Grid for School Page */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 1000px;
+}
+
+.grid-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.grid-item:hover img {
+    transform: scale(1.1); /* Enlarge on hover */
+}
+
+.grid-item .caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(221, 97, 74, 0.8); /* Semi-transparent background */
+    color: #F3FFC6;
+    padding: 5px;
+    font-size: 1em;
+    text-align: center;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+.grid-item:hover .caption {
+    transform: translateY(0); /* Slide in on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .image-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .image-grid {
+        grid-template-columns: 1fr;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    .intro {
+        font-size: 1em;
+        padding: 10px;
+    }
+}
