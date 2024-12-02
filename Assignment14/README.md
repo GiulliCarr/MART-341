@@ -1,0 +1,5 @@
+3+ Pages – Home Page: Features a header, subheader, navigation bar, and a descriptive section with an image and text. Includes an HTML5 canvas animation. Things to See Page: Displays attractions in a grid layout with linked images, headers, and captions. Things to Taste Page: Categorizes dining options into "Daytime" and "Nightlife" columns with linked subheaders and descriptions.
+Framework Integration – Used Bootstrap for responsive design, grid layout, and consistent styling.
+Framework Styling Elements – Used CSS to stylize. Fonts: Playfair Display for headers and subheaders, Raleway for body text. Color Scheme: Background #2E5266, Text #FFC759. Centered layout with rounded corners for boxes.
+HTML5 Canvas – Included on the Home Page to display an animated custom graphic using JavaScript.
+JavaScript Functionality – Adds interactivity, such as the canvas animation and dynamic enhancements.
