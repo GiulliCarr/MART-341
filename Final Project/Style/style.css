@@ -1,0 +1,201 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Myriad', sans-serif; /* Updated body font */
+    background-color: #FAFAFF; /* Background color */
+    color: #FFC759; /* Font color */
+    text-align: center;
+}
+
+/* Fonts for Headings */
+h1, h2, h3 {
+    font-family: 'Gabriela', serif; /* Updated header font */
+    color: #FFC759; /* Font color for headers */
+    font-weight: bold;
+}
+
+h3 {
+    font-style: italic;
+}
+
+/* Header Styling */
+header {
+    width: 100%;
+    background-color: #666B6A; /* Default header background */
+    color: #FFC759;
+    padding: 20px 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+/* Image Header */
+/* Responsive Header Image */
+.header-image {
+    width: 100%;
+    max-width: 500px; /* 30% larger than 200px */
+    height: auto;
+    margin-bottom: 20px;
+}
+
+
+/* Navigation Bar - Positioned Below the Header */
+nav {
+    width: 100%;
+    background-color: #666B6A; /* Nav background color */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #FFC759;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #FAFAFF; /* Hover color */
+}
+
+/* Dropdown Menu */
+nav ul li .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #666B6A;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav ul li:hover .dropdown-menu {
+    display: block;
+}
+
+nav ul li .dropdown-menu li {
+    display: block;
+    margin: 5px 0;
+}
+
+/* Centered Div for Videos */
+.centered-div {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+iframe {
+    border: none;
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+}
+
+/* Content Containers */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.album-span, .inline-block, ul {
+    background-color: #666B6A; /* Updated box color */
+    color: #FFC759;
+    border: 2px solid #FFC759; /* Updated border color */
+    border-radius: 10px;
+    padding: 15px;
+    margin: 20px auto;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.album-span {
+    display: flex;
+    align-items: center;
+    width: 800px;
+}
+
+/* Specific Image Resizing for Artist of the Week and ROOTS Pages */
+.artist-page img, .roots-page img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.album-span img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-right: 20px;
+    border-radius: 8px;
+}
+
+.album-text {
+    text-align: right;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Paragraph Boxes */
+.description, #intro {
+    margin: 15px auto;
+    width: 80%;
+    max-width: 600px;
+    font-size: 1em;
+    text-align: left;
+    background-color: #666B6A; /* Updated box background color */
+    color: #FFC759; /* Updated text color */
+    padding: 20px;
+    border-radius: 8px;
+    border: 2px solid #FFC759; /* Updated border color */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Section */
+.footer {
+    text-align: center;
+    margin-top: 30px;
+}
+
+body::after {
+    content: '';
+    display: block;
+    height: 40px;
+}
+
+/* Escape Character Section */
+.escape-char {
+    text-align: center;
+    margin-top: 10px;
+    font-style: italic;
+    color: #666B6A;
+}
